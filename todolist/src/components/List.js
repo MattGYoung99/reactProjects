@@ -8,11 +8,11 @@ class List extends React.Component {
     render() {
         const children = this.props.children
         return (
-            <ul className="List">
+            <ol className="List">
                 {React.Children.map(children, (child, id) => {
-                    return <li key={id}>{child}</li>
+                    return <li id={id} key={id}>{child}</li>
                 })}
-            </ul>
+            </ol>
         )
     }
 }
