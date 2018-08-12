@@ -1,13 +1,16 @@
 import React from 'react'
 import AddTodo from './buttons/AddTodo'
 import RemoveTodo from './buttons/RemoveTodo'
-import List from './components/List'
+import List from './List'
 import './TodoList.css'
 
 class TodoList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' }
+    this.state = { 
+      value: '',
+      listItems: []
+  }
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -25,7 +28,7 @@ class TodoList extends React.Component {
           <RemoveTodo value={this.state.value}/>
         </div>
         <div className="TodoBody">
-          <List/>
+          <List children={this.state.listItems}></List>
         </div>
       </div>
     );

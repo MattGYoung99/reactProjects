@@ -2,13 +2,16 @@ import React from 'react';
 import './List.css';
 
 class List extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const children = this.props.children
         return (
             <ul className="List">
-                <li>Item one</li>
-                <li>Item two</li>
-                <li>Item three</li>
-                <li>Item four</li>
+                {React.Children.map(children, (child, id) => {
+                    return <li key={id}>{child}</li>
+                })}
             </ul>
         )
     }
