@@ -1,15 +1,20 @@
-import React from 'react';
+import React from 'react'
 import AddTodo from './buttons/AddTodo'
 import RemoveTodo from './buttons/RemoveTodo'
-import './TodoList.css';
+import './TodoList.css'
 
 class TodoList extends React.Component {
   render() {
     return (
       <div className="TodoList">
-        This is my Todo List
-        <AddTodo />
-        <RemoveTodo />
+        <div className="TodoHead">
+          <h1>To-do List</h1>
+          <input type="text" placeholder="Enter something todo"></input>
+          <AddTodo />
+          <RemoveTodo />
+        </div>
+        <div className="TodoBody">
+        </div>
       </div>
     );
   }

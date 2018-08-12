@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import './RemoveTodo.css'
 
 class RemoveTodo extends React.Component {
     render() {
         return (
-            <button>+</button>
+            <button className="RemoveTodo">-</button>
         )
     }
 }

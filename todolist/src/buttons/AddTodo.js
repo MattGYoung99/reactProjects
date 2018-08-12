@@ -1,9 +1,11 @@
-import React from 'react';
+import React from 'react'
+import './AddTodo.css'
 
 class AddTodo extends React.Component {
     render() {
         return (
-            <button>-</button>
+            <button className="AddTodo">+</button>
+            
         )
     }
 }
