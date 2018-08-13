@@ -12,7 +12,7 @@ class RemoveTodo extends React.Component {
     }
     render() {
         return (
-            <button className="RemoveTodo"  onClick={this.removeTodoItem}>-</button>
+            <button className="RemoveTodo" onClick={this.removeTodoItem}>-</button>
         )
     }
 }
