@@ -2,8 +2,13 @@
   background-color: #eeeeee;
   margin: 10px;
   padding: 10px;
+  border: #000 solid 1px;
+  text-align: center;
 }
 
+.TodoHead h1 {
+  text-align: center;
+}
 input {
   height: 3em;
 }

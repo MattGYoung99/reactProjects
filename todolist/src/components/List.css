@@ -1,9 +1,9 @@
 .List {
-    background-color: #ccc
+    background-color: #ccc;
 }
 
 .List li {
-    border: #808080 solid 0.5px;
+    border-bottom: #808080 solid 0.5px;
     padding: 5px;
     margin: 2px;
 }

@@ -1,5 +1,7 @@
 .RemoveTodo {
     width: 5em;
-    height: 3em;
+    height: 4em;
+    padding: 2px;
     margin: 5px;
+    text-align: center;
 }
