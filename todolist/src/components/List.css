@@ -3,6 +3,7 @@
 }
 
 .List li {
+    border: #808080 solid 0.5px;
     padding: 5px;
     margin: 2px;
 }

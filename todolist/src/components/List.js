@@ -10,7 +10,7 @@ class List extends React.Component {
         return (
             <ol className="List">
                 {React.Children.map(children, (child, id) => {
-                    return <li id={id} key={id}>{child}</li>
+                    return <li id={id} key={id} onClick={(e) => this.props.clicked(e)}>{child}</li>
                 })}
             </ol>
         )
